@@ -1,0 +1,17 @@
+        -:    0:Source:main.h
+        -:    0:Graph:main.gcno
+        -:    0:Data:main.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#ifndef GUARD
+        -:    2:#define GUARD
+        -:    3:
+        -:    4:#define AVIV 1
+        -:    5:#define MAX_ITER 10
+        -:    6:
+        1:    7:static inline int fun(int x)
+        -:    8:{
+        1:    9: return 1;
+        -:   10:}
+        -:   11:
+        -:   12:#endif

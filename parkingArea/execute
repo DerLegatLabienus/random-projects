@@ -1,0 +1,20 @@
+#!/bin/bash
+
+function sighandler() {
+
+	echo "sub" $$ "process got SIGINT and exiting"
+	echo kill -INT $$
+	trap - INT
+	kill -INT $$
+
+}
+
+declare -t VAR=33
+trap "sighandler" SIGINT
+trap "echo VAR" DEBUG
+set i=0;
+while true; do
+	sleep 1s
+	aviv=i++;
+	echo "main subprocess"
+done

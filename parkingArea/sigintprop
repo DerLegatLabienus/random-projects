@@ -1,0 +1,8 @@
+#!/bin/bash
+
+trap "trap - INT; echo bye bye" "SIGINT"
+trap "echo bye bye again" "SIGQUIT"
+
+
+./execute 
+sleep 1s

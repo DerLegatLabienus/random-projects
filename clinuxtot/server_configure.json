@@ -1,0 +1,19 @@
+{
+	"ports" : 
+	[ 
+		{
+			"num" : 8080,
+			"protocol" : "tcp"
+		},
+		{	
+			"num" : 8081,
+			"protocol" : "tcp"
+		},
+
+		{	
+			"num" : 8079,
+			"protocol" : "tcp"
+		}
+	],
+	"reader_name" : "client"
+}

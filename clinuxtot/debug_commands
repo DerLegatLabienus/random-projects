@@ -1,0 +1,2 @@
+netstat -panlt\n
+while [ 1 ]; do echo aviv | nc localhost 8080 -q 1 ; echo aviv1 | nc localhost 8079 -q 1 & echo aviv2 | nc localhost 8081 -q 1 & done

@@ -1,0 +1,21 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Aviv	aviv.cpp	/^Aviv::Aviv()$/;"	f	class:Aviv	signature:()
+Aviv	aviv.h	/^	Aviv();$/;"	p	class:Aviv	access:private	signature:()
+Aviv	aviv.h	/^class Aviv$/;"	c
+Aviv::Aviv	aviv.cpp	/^Aviv::Aviv()$/;"	f	class:Aviv	signature:()
+Aviv::Aviv	aviv.h	/^	Aviv();$/;"	p	class:Aviv	access:private	signature:()
+Aviv::av	aviv.h	/^	public int av()$/;"	f	class:Aviv	access:public	signature:()
+Aviv::tal	aviv.cpp	/^void Aviv::tal(int david)$/;"	f	class:Aviv	signature:(int david)
+Aviv::tal	aviv.h	/^	public void tal(int davi, int moshe, char *mutter);$/;"	p	class:Aviv	access:public	signature:(int davi, int moshe, char *mutter)
+Aviv::vater	aviv.h	/^	void vater(int david);$/;"	p	class:Aviv	access:public	signature:(int david)
+av	aviv.h	/^	public int av()$/;"	f	class:Aviv	access:public	signature:()
+main	aviv.cpp	/^int main()$/;"	f	signature:()
+main	main.cpp	/^int main()$/;"	f	signature:()
+tal	aviv.cpp	/^void Aviv::tal(int david)$/;"	f	class:Aviv	signature:(int david)
+tal	aviv.h	/^	public void tal(int davi, int moshe, char *mutter);$/;"	p	class:Aviv	access:public	signature:(int davi, int moshe, char *mutter)
+vater	aviv.h	/^	void vater(int david);$/;"	p	class:Aviv	access:public	signature:(int david)
