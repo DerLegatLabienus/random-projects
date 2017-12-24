@@ -1,0 +1,19 @@
+[
+{
+  "directory": "/home/aviva/random-projects/clinuxtot",
+  "command": "gcc -std=gnu11 -O0 -fsanitize=address -DCONFIGURATION_DEBUG -g main.c process_conf.c -o server -lpthread -lrt -L. -ljson -lm",
+  "file": "/home/aviva/random-projects/clinuxtot/main.c"
+}
+,
+{
+  "directory": "/home/aviva/random-projects/clinuxtot",
+  "command": "gcc -std=gnu11 -O0 -fsanitize=address -g client.c process_conf.c -o client -lpthread -lrt -L. -ljson -lm",
+  "file": "/home/aviva/random-projects/clinuxtot/client.c"
+}
+,
+{
+  "directory": "/home/aviva/random-projects/clinuxtot",
+  "command": "gcc -std=gnu11 -O0 -fsanitize=address -g test.c -o test -lpthread -lrt -L. -ljson -lm",
+  "file": "/home/aviva/random-projects/clinuxtot/test.c"
+}
+]

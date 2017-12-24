@@ -1,4 +1,4 @@
-cscope 15 $HOME/clinuxtot               0000246754
+cscope 15 $HOME/random-projects/clinuxtot               0000246755
 	@client.c
 
 1 
@@ -3985,89 +3985,89 @@ __˝lu•lus
 	~<sys/waô.h
 >
 
-13 
+12 
 	~<√töë/ù.h
 >
 
-14 
+13 
 	~<√töë/ö.h
 >
 
-15 
+14 
 	~<sys/ty≥s.h
 >
 
-16 
+15 
 	~<sys/sockë.h
 >
 
-17 
+16 
 	~<¨∑/öë.h
 >
 
-18 
+17 
 	~<sys/sysˇŒ.h
 >
 
-19 
+18 
 	~<uni°d.h
 >
 
-20 
+19 
 	~<pﬁl.h
 >
 
-22 
+21 
 	#SERVER
 
 
 	)
 
-23 
+22 
 	~"maö.h
 "
 
-24 
+23 
 	~<°dlib.h
 >
 
-26 **
+25 **
 ívú⁄
 ;
 
-28 
+27 
 	s˛õ¡_öfo_°ru˘_t
  {
 
-29 
+28 
 	msour˚_sockë
 ;
 
-30 
+29 
 	mmqid
 ;
 
-34 vﬁ©ûê
+33 vﬁ©ûê
 	gmsg_id
  = 0;
 
-35 
+34 
 ±hªad_muãx_t
  
 	gm
 ;
 
-37 *
+36 *
 	$h™dÀ_˛õ¡_thªad_fun˘i⁄
 (*
 ¨gs
 ) {
 
-38 
+37 
 √w_sock
  = 0;
 
-39 
+38 
 pid_t
  
 tid
@@ -4077,7 +4077,7 @@ tid
 SYS_gëtid
 );
 
-40 
+39 
 pid_t
  
 tid2
@@ -4085,7 +4085,7 @@ tid2
 	`±hªad_£lf
 ();
 
-41 
+40 
 ˛õ¡_öfo_°ru˘_t
  *
 öput
@@ -4093,11 +4093,11 @@ tid2
 ¨gs
 ;
 
-43 i‡(!
+42 i‡(!
 öput
 ) {
 
-44 
+43 
 	`Ârötf
 (
 °dîr
@@ -4105,23 +4105,23 @@ tid2
 __func__
 );
 
-45  
+44  
 NULL
 ;
 
-48 
+47 
 sockaddr
  
 ª˚vög_íd
 ;
 
-49 
+48 
 sockÀn_t
  
 addæí
  = 0;
 
-50 (
+49 (
 √w_sock
  = 
 	`ac˚±
@@ -4135,15 +4135,15 @@ sour˚_sockë
 addæí
 ))>0) {
 
-51 
+50 
 	`¥ötf
 ("successfull connection\n" );
 
-52 
+51 
 buf
 [50] = {'\0'};
 
-53 
+52 
 ssize_t
  
 Àn
@@ -4155,13 +4155,13 @@ ssize_t
 buf
 ,50,0);
 
-55 
+54 
 	`±hªad_muãx_lock
 (&
 m
 );
 
-56 
+55 
 my_msg
  
 msg
@@ -4175,7 +4175,7 @@ msg_id
 	`gëµid
 ()};
 
-57 
+56 
 	`°∫˝y
 (
 msg
@@ -4185,7 +4185,7 @@ msg_d©a
 buf
 , 50);
 
-58 
+57 
 ªs
  = 
 	`mq_£nd
@@ -4197,11 +4197,11 @@ mqid
 msg
 , (msg), 1);
 
-59 i‡(
+58 i‡(
 ªs
  == -1) {
 
-60 
+59 
 	`Ârötf
 (
 °dîr
@@ -4211,13 +4211,13 @@ msg
 î∫o
 ));
 
-61 
+60 
 	`¥ötf
 ("£ndög d©®Áûed wôhÉºnÿ%d\n", 
 î∫o
 );
 
-63 
+62 
 	`±hªad_muãx_u∆ock
 (&
 m
@@ -4281,7 +4281,7 @@ s_addr
 ù_addr
 ;
 
-80 
+83 
 	`mem£t
 (&
 s_addr
@@ -4289,7 +4289,7 @@ s_addr
 sockaddr_ö
 ));
 
-81 
+84 
 s_addr
 .
 sö_Ámûy
@@ -4297,13 +4297,13 @@ sö_Ámûy
 AF_INET
 ;
 
-82 i‡(
+86 i‡(
 ù
  !
 NULL
 ) {
 
-83 
+87 
 	`mem£t
 (&
 ù_addr
@@ -4311,7 +4311,7 @@ NULL
 ö_addr
 ));
 
-84 i‡(
+88 i‡(
 	`öë_±⁄
 (
 s_addr
@@ -4323,13 +4323,13 @@ sö_Ámûy
 ù_addr
 ) != 1) {
 
-85 
+89 
 	`Ârötf
 (
 °dîr
 , " inet_pton failed \n ");
 
-88 
+92 
 ù_addr
 .
 s_addr
@@ -4337,7 +4337,7 @@ s_addr
 INADDR_LOOPBACK
 ;
 
-89 
+93 
 ù
  = 
 	`öë_¡ﬂ
@@ -4345,7 +4345,7 @@ INADDR_LOOPBACK
 ù_addr
 );
 
-91 
+95 
 s_addr
 .
 sö_addr
@@ -4353,7 +4353,7 @@ sö_addr
 ù_addr
 ;
 
-94 *
+98 *
 sockës
  = (*)
 	`mÆloc
@@ -4361,13 +4361,13 @@ sockës
 n_p‹ts
  * ());
 
-95 
+99 
 sock_i
  = 0; sock_ò< 
 n_p‹ts
 ; sock_i++) {
 
-96 
+100 
 sockës
 [
 sock_i
@@ -4379,13 +4379,13 @@ AF_INET
 SOCK_STREAM
 , 0);
 
-97 i‡(
+101 i‡(
 sockës
 [
 sock_i
 ] == -1) {
 
-98 
+102 
 	`Ârötf
 (
 °dîr
@@ -4393,7 +4393,7 @@ sock_i
 ¥t˛
 );
 
-102 
+106 
 s_addr
 .
 sö_p‹t
@@ -4405,7 +4405,7 @@ li°í_p‹ts
 sock_i
 ]);
 
-103 i‡(
+107 i‡(
 	`böd
 (
 sockës
@@ -4417,7 +4417,7 @@ sockaddr
 s_addr
 , (s_addr)) == -1) {
 
-104 
+108 
 	`Ârötf
 (
 °dîr
@@ -4435,7 +4435,7 @@ s_addr
 sö_p‹t
 ));
 
-107 i‡(
+111 i‡(
 	`li°í
 (
 sockës
@@ -4443,13 +4443,13 @@ sockës
 sock_i
 ], 100) == -1) {
 
-108 i‡(
+112 i‡(
 î∫o
  =
 EADDRINUSE
 ) {
 
-109 
+113 
 	`Ârötf
 (
 °dîr
@@ -4459,31 +4459,31 @@ EADDRINUSE
 î∫o
 ),Érrno);
 
-111 i‡(
+115 i‡(
 î∫o
  =
 EOPNOTSUPP
 ) {
 
-112 
+116 
 	`¥ötf
 ("somehting");
 
-116 #ifde‡
+120 #ifde‡
 NETWORK_DEBUG
 
 
-117 
+121 
 	`¥ötf
 ("socket is up!\n");
 
-121 
+125 
 n_sockës
  = 
 n_p‹ts
 ;
 
-122 
+126 
 evíts
  = 
 POLLIN
@@ -4491,11 +4491,11 @@ POLLIN
 POLLPRI
 ;
 
-123 #ifde‡
+127 #ifde‡
 __USE_GNU
 
 
-124 
+128 
 îr_evíts
  = 
 POLLRDHUP
@@ -4507,7 +4507,7 @@ POLLNVAL
 POLLHUP
 ;
 
-126 
+130 
 îr_evíts
  = 
 POLLERR
@@ -4517,7 +4517,7 @@ POLLNVAL
 POLLHUP
 ;
 
-128 
+132 
 pﬁlfd
  *
 pﬁlfd_öfo
@@ -4527,13 +4527,13 @@ pﬁlfd_öfo
 n_sockës
 ,(pollfd));
 
-129 
+133 
 i
  = 0; i < 
 n_sockës
 ; i++) {
 
-130 
+134 
 pﬁlfd_öfo
 [
 i
@@ -4541,7 +4541,7 @@ i
 evíts
  =Évents;
 
-131 
+135 
 pﬁlfd_öfo
 [
 i
@@ -4549,7 +4549,7 @@ i
 ªvíts
  = 0;
 
-132 
+136 
 pﬁlfd_öfo
 [
 i
@@ -4559,17 +4559,17 @@ fd
 sockës
 [i];
 
-135 
+139 
 	`‰ì
 (
 sockës
 );
 
-136 
+140 
 n_ªque°s
  = 0;
 
-138 i‡(
+142 i‡((
 n_ªque°s
  = 
 	`pﬁl
@@ -4577,9 +4577,9 @@ n_ªque°s
 pﬁlfd_öfo
 ,
 n_sockës
-,-1)) {
+,-1))) {
 
-139 
+143 
 i
  = 0; i < 
 n_sockës
@@ -4587,7 +4587,7 @@ n_sockës
 n_ªque°s
  > 0; i++) {
 
-140 i‡(
+144 i‡(
 pﬁlfd_öfo
 [
 i
@@ -4597,7 +4597,7 @@ i
 evíts
 ) {
 
-141 
+145 
 ˛õ¡_öfo_°ru˘_t
  
 öput
@@ -4613,13 +4613,13 @@ fd
 mqid
 =mqid };
 
-142 
+146 
 ±hªad_t
  
 tid
 ;
 
-143 
+148 
 	`±hªad_¸óã
 (&
 tid
@@ -4631,7 +4631,7 @@ h™dÀ_˛õ¡_thªad_fun˘i⁄
 öput
 );
 
-144 
+149 
 pﬁlfd_öfo
 [
 i
@@ -4639,37 +4639,37 @@ i
 ªvíts
  = 0;
 
-145 
+150 
 n_ªque°s
 --;
 
-150 
+155 
 	`‰ì
 (
 pﬁlfd_öfo
 );
 
-151 
+156 
 	`±hªad_muãx_de°roy
 (&
 m
 );
 
-154 
+159 
 	}
 }
 
-155 *
+160 *
 	$h™dÀ_dód_chûdªn
 (*
 ¨g
 ) {
 
-156 
+161 
 °©us
 ;
 
-160 
+165 
 pid_t
  
 chûd_pid
@@ -4679,19 +4679,19 @@ chûd_pid
 °©us
 );
 
-161 i‡(
+166 i‡(
 chûd_pid
  == -1) {
 
-163 i‡(
+168 i‡(
 î∫o
  == 10)
 
-164  
+169  
 NULL
 ;
 
-165 
+170 
 	`¥ötf
 ("__func__ faûed: %dánd %s\n", 
 î∫o
@@ -4699,7 +4699,7 @@ NULL
 	`°ªº‹
 (errno));
 
-167 
+172 
 	`¥ötf
 ("pid %d stdout,îr‹ %d\n",
 chûd_pid
@@ -4707,13 +4707,13 @@ chûd_pid
 °©us
 );
 
-168 i‡(
+173 i‡(
 	`WIFSIGNALED
 (
 °©us
 ))
 
-169 
+174 
 	`¥ötf
 ("ouàby sig«»%s\n", 
 	`°rsig«l
@@ -4723,13 +4723,13 @@ chûd_pid
 °©us
 )));
 
-170 i‡(
+175 i‡(
 	`WIFSTOPPED
 (
 °©us
 ))
 
-171 
+176 
 	`¥ötf
 ("°›≥d by sig«»%s\n", 
 	`°rsig«l
@@ -4739,25 +4739,25 @@ chûd_pid
 °©us
 )));
 
-173  
+178  
 NULL
 ;
 
-174 
+179 
 	}
 }
 
-176 
+181 
 	$¥ötP©h
 () {
 
-178 *
+183 *
 s
  = 
 	`gëív
 ("PATH");
 
-179 *
+184 *
 sub_∑th
  = 
 	`°πok
@@ -4765,23 +4765,23 @@ sub_∑th
 s
 ,":");
 
-180 
+185 
 sub_∑th
  !
 NULL
 ) {
 
-181 #ifde‡
+186 #ifde‡
 PATH_DEBUG
 
 
-182 
+187 
 	`¥ötf
 ("%s\n",
 sub_∑th
 );
 
-184 
+189 
 sub_∑th
  = 
 	`°πok
@@ -4789,25 +4789,25 @@ sub_∑th
 NULL
 ,":");
 
-186 **
+191 **
 e
  = 
 ívú⁄
 ;
 
-187 
+192 
 e
  !
 NULL
  && *e != NULL) {
 
-188 i‡(!
+193 i‡(!
 	`°∫cmp
 (*
 e
 ,"PATH",4)) {
 
-189 *
+194 *
 √w_∑th_v¨
  = (*)
 	`mÆloc
@@ -4817,7 +4817,7 @@ e
 e
 )+strlen(":/home/aviva/clinuxtot/:.")+1);
 
-190 
+195 
 	`•rötf
 (
 √w_∑th_v¨
@@ -4825,31 +4825,31 @@ e
 e
 ,":/home/aviva/clinuxtot/:.");
 
-191 *
+196 *
 e
  = 
 √w_∑th_v¨
 ;
 
-192 #ifde‡
+197 #ifde‡
 PATH_DEBUG
 
 
-193 
+198 
 	`¥ötf
 ("∑th m™ùuœãd: %s\n",*
 e
 );
 
-196 
+201 
 e
 ++;
 
-199 
+204 
 	}
 }
 
-201 
+206 
 	$¥oc_chûd_¥o˚ss
 (
 mqd_t
@@ -4857,23 +4857,23 @@ mqd_t
 mqid
 ) {
 
-202 
+207 
 	`¥ötP©h
 ();
 
-204 
+209 
 	`mq_˛o£
 (
 mqid
 );
 
-205 
+210 
 	`exe˛p
 ("˛õ¡","˛õ¡",(*)
 NULL
 );
 
-206 
+211 
 	`Ârötf
 (
 °dîr
@@ -4883,15 +4883,15 @@ NULL
 	`°ªº‹
 (errno));
 
-207 
+212 
 	`exô
 (1);
 
-208 
+213 
 	}
 }
 
-209 
+214 
 	$£tup_ªadî_unôs
 (
 n_ªadîs
@@ -4903,13 +4903,13 @@ mqid
 chûd_pids
  ) {
 
-210 
+215 
 pid_t
  
 pid
 ;
 
-211 *
+216 *
 chûd_pids
  = (*)
 	`mÆloc
@@ -4917,11 +4917,11 @@ chûd_pids
 n_ªadîs
  * ());
 
-212 
+217 
 ªadî_i
  = 0;
 
-213 
+218 
 pid
  !0 && 
 ªadî_i
@@ -4929,27 +4929,27 @@ pid
 n_ªadîs
 ) {
 
-214 
+219 
 pid
  = 
 	`f‹k
 ();
 
-215 i‡(
+220 i‡(
 pid
  == 0 ) {
 
-216 
+221 
 	`¥oc_chûd_¥o˚ss
 (
 mqid
 );
 
-217 } i‡(
+222 } i‡(
 pid
  == -1) {
 
-218 
+223 
 	`Ârötf
 (
 °dîr
@@ -4959,11 +4959,11 @@ pid
 î∫o
 ));
 
-219 
+224 
 	`exô
 (-1);
 
-221 (*
+226 (*
 chûd_pids
 )[
 ªadî_i
@@ -4971,11 +4971,11 @@ chûd_pids
 pid
 ;
 
-224 
+229 
 	}
 }
 
-225 
+230 
 	$£tup_chûd_sig_thªad
 (
 ±hªad_t
@@ -4983,15 +4983,15 @@ pid
 sig_thªad_id
 ) {
 
-226 #ifde‡
+231 #ifde‡
 NETWORK_DEBUG
 
 
-227 
+232 
 	`¥ötf
 ("master\n");
 
-229 i‡(!(
+234 i‡(!(
 	`±hªad_¸óã
 (
 sig_thªad_id
@@ -5001,15 +5001,15 @@ NULL
 h™dÀ_dód_chûdªn
 ,NULL)))
 
-230 
+235 
 	`¥ötf
 ("handle childrenÅhread is up!\n");
 
-231 
+236 
 	}
 }
 
-232 
+237 
 	$£tup_mq
 (
 mq_©å
@@ -5021,7 +5021,7 @@ mqd_t
 mqid
 ) {
 
-233 
+238 
 ©å
 ->
 mq_msgsize
@@ -5029,13 +5029,13 @@ mq_msgsize
 my_msg
 );
 
-234 
+239 
 ©å
 ->
 mq_maxmsg
  = 10;
 
-235 *
+240 *
 mqid
  = 
 	`mq_›í
@@ -5053,23 +5053,23 @@ S_IWUSR
 ©å
 ) ;
 
-236 #ifde‡
+241 #ifde‡
 NETWORK_DEBUG
 
 
-237 
+242 
 	`¥ötf
  ("√w mes£gêqueuêo‡id %d\n",*
 mqid
 );
 
-240 i‡(*
+245 i‡(*
 mqid
  =(
 mqd_t
 ) -1) {
 
-241 
+246 
 	`Ârötf
 (
 °dîr
@@ -5081,7 +5081,7 @@ __func__
 î∫o
 ),Érrno);
 
-242 
+247 
 	`Ârötf
 (
 °dîr
@@ -5095,15 +5095,15 @@ mq_msgsize
 mq_maxmsg
 );
 
-243 
+248 
 	`exô
 (-1);
 
-245 
+250 
 	}
 }
 
-249 
+254 
 	$execuã_£rvî
 (
 mqd_t
@@ -5111,13 +5111,13 @@ mqd_t
 mqid
 ) {
 
-252 
+257 
 ±hªad_muãx©å_t
  
 ©å
 ;
 
-253 
+258 
 ©å
 .
 __Æign
@@ -5125,7 +5125,7 @@ __Æign
 PTHREAD_MUTEX_ADAPTIVE_NP
 ;
 
-255 
+260 
 	`±hªad_muãx_öô
 (&
 m
@@ -5133,11 +5133,11 @@ m
 ©å
 );
 
-256 
+261 
 li°í_p‹ts
 [] = {8081,8080,8079};
 
-257 
+262 
 	`ª˚ive_hâp_ªque°s
 (
 AF_INET
@@ -5147,11 +5147,11 @@ li°í_p‹ts
 mqid
 );
 
-266 
+271 
 	}
 }
 
-267 
+272 
 	$⁄_¥ogøm_exô
 (
 ±hªad_t
@@ -5163,25 +5163,25 @@ chûd_pids
 n_ªadîs
 ) {
 
-268 
+273 
 r
  = 0;
 
-269 i‡(
+274 i‡((
 r
  = 
 	`±hªad_ˇn˚l
 (
 sig_thªad_id
-)) {
+))) {
 
-270 
+275 
 	`¥ötf
 ("%d\n",
 r
 );
 
-271 
+276 
 	`Ârötf
 (
 °dîr
@@ -5191,23 +5191,23 @@ r
 	`°ªº‹
 (errno));
 
-273 *
+278 *
 pids
  = *
 chûd_pids
 ;
 
-274 
+280 
 i
  = 0;
 
-275 ; 
+281 ; 
 i
  < 
 n_ªadîs
  ; i++) {
 
-276 
+282 
 	`kûl
 (
 pids
@@ -5217,7 +5217,7 @@ i
 SIGTERM
 );
 
-277 
+283 
 	`¥ötf
 ("˛õ¡ wôhÖid %d i†k≠uâ\n",
 pids
@@ -5225,47 +5225,47 @@ pids
 i
 ]);
 
-280 
+286 
 	`‰ì
 (*
 chûd_pids
 );
 
-283 
+289 
 	}
 }
 
-285 
+292 
 	$maö
 (
 ¨gc
 , **
 ¨gv
-)
+) {
 
-287 
+293 
 mq_©å
  
 ©å
 ;
 
-288 
+294 
 ±hªad_t
  
 sig_thªad_id
 ;
 
-289 
+295 
 mqd_t
  
 mqid
 ;
 
-290 *
+296 *
 chûd_pids
 ;
 
-291 
+297 
 £rvî_c⁄figuøti⁄_t
  *
 c⁄fig
@@ -5273,13 +5273,13 @@ c⁄fig
 NULL
 ;
 
-292 
+298 
 	`buûd_c⁄fig
 (&
 c⁄fig
 ,"server_configure.json");
 
-293 
+299 
 	`£tup_mq
 (&
 ©å
@@ -5287,7 +5287,7 @@ c⁄fig
 mqid
 );
 
-294 
+300 
 	`£tup_ªadî_unôs
 (5,
 mqid
@@ -5295,19 +5295,19 @@ mqid
 chûd_pids
 );
 
-295 
+301 
 	`£tup_chûd_sig_thªad
 (&
 sig_thªad_id
 );
 
-296 
+302 
 	`execuã_£rvî
 (
 mqid
 );
 
-297 
+303 
 	`⁄_¥ogøm_exô
 (
 sig_thªad_id
@@ -5315,7 +5315,7 @@ sig_thªad_id
 chûd_pids
 ,2);
 
-299 
+305 
 	}
 }
 
@@ -5685,9 +5685,7 @@ f
 	}
 }
 
-62 
-£rvî_c⁄figuøti⁄_t
- *
+62 
 	$buûd_c⁄fig
 (
 £rvî_c⁄figuøti⁄_t
@@ -5725,7 +5723,9 @@ FILE
 c⁄f_h™dÀr
  = 
 	`f›í
-("server_configure.json","r");
+(
+c⁄f_fûe
+,"r");
 
 67 
 js⁄_vÆue
@@ -5759,7 +5759,7 @@ c⁄f_h™dÀr
 js⁄_ch¨
  *
 js⁄
- = 
+ = (js⁄_ch¨ *)
 	`mÆloc
 ((js⁄_ch¨)*
 Àngth

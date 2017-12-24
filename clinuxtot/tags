@@ -9,7 +9,7 @@ MAX_PORTS	main.h	15;"	d
 PORTS_HEADER	process_conf.c	/^const char *PORTS_HEADER = "ports";$/;"	v
 PORTS_NUMBER	process_conf.c	/^const char *PORTS_NUMBER = "num";$/;"	v
 PORT_T	main.h	/^typedef short PORT_T;$/;"	t
-SERVER	main.c	22;"	d	file:
+SERVER	main.c	21;"	d	file:
 SERVER	process_conf.c	1;"	d	file:
 _CRT_SECURE_NO_WARNINGS	json.c	34;"	d	file:
 _GNU_SOURCE	test.c	3;"	d	file:
@@ -24,7 +24,7 @@ array	json.h	/^      } array;$/;"	m	union:_json_value::__anon4	typeref:struct:_j
 begin	json.h	/^         decltype(values) begin () const$/;"	f	struct:_json_value::__anon4::__anon6
 begin	json.h	/^         decltype(values) begin () const$/;"	f	struct:_json_value::__anon4::__anon7
 boolean	json.h	/^      int boolean;$/;"	m	union:_json_value::__anon4
-build_config	process_conf.c	/^struct server_configuration_t *build_config(struct server_configuration_t **p_to_conf_map, const char *conf_file) {$/;"	f
+build_config	process_conf.c	/^void build_config(struct server_configuration_t **p_to_conf_map, const char *conf_file) {$/;"	f
 client_configuration_t	main.h	/^struct client_configuration_t {$/;"	s
 client_info_struct_t	main.c	/^struct client_info_struct_t {$/;"	s	file:
 client_name	main.h	/^	short client_name;$/;"	m	struct:server_configuration_t
@@ -96,7 +96,7 @@ line_and_col	json.c	201;"	d	file:
 listen_ports	main.h	/^	PORT_T listen_ports[MAX_PORTS];$/;"	m	struct:server_configuration_t
 m	main.c	/^pthread_mutex_t m;$/;"	v
 main	client.c	/^int main(int argc, char **argv) {$/;"	f
-main	main.c	/^int main(int argc, char **argv) $/;"	f
+main	main.c	/^int main(int argc, char **argv) {$/;"	f
 main	test.c	/^int main() {$/;"	f
 max_memory	json.h	/^   unsigned long max_memory;$/;"	m	struct:__anon2
 mem_alloc	json.h	/^   void * (* mem_alloc) (size_t, int zero, void * user_data);$/;"	m	struct:__anon2

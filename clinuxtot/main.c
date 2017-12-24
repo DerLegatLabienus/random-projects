@@ -9,7 +9,6 @@
 #include <pthread.h>
 #include <sys/wait.h>
 
-
 #include <netinet/ip.h>
 #include <netinet/in.h>
 #include <sys/types.h>
@@ -61,6 +60,7 @@ void *handle_client_thread_function(void *args) {
 			printf("sending data failed with errno %d\n", errno);
 		}
 		pthread_mutex_unlock(&m);
+		
 		close(new_sock);
 		if (!strncmp(msg.msg_data,"BYE",3))
 			break;
@@ -77,8 +77,12 @@ void receive_http_requests(int prtcl, short listen_ports[], int n_ports, char *i
 	//deal with address info
 	struct sockaddr_in s_addr;
 	struct in_addr ip_addr;
+
+
+	
 	memset(&s_addr,0,sizeof(struct sockaddr_in));
 	s_addr.sin_family = AF_INET;
+	
 	if (ip != NULL) {
 		memset(&ip_addr,0,sizeof(struct in_addr));
 		if (inet_pton(s_addr.sin_family,ip,&ip_addr) != 1) {
@@ -135,11 +139,12 @@ void receive_http_requests(int prtcl, short listen_ports[], int n_ports, char *i
 	free(sockets);
 	int n_requests = 0;
 	while (1) {
-		if (n_requests = poll(pollfd_info,n_sockets,-1)) { 
+		if ((n_requests = poll(pollfd_info,n_sockets,-1))) { 
 			for (int i = 0; i < n_sockets && n_requests > 0; i++) {
 				if (pollfd_info[i].revents & events)  {
 					struct client_info_struct_t input = { .source_socket=pollfd_info[i].fd , .mqid=mqid }; 
 					pthread_t tid;
+					
 					pthread_create(&tid,NULL,&handle_client_thread_function,&input);
 					pollfd_info[i].revents = 0;
 					n_requests--;
@@ -263,14 +268,15 @@ void execute_server(mqd_t mqid) {
 				printf("sending data failed with errno %d\n", errno);
 			}
 		}*/
-}
+	}
 void on_program_exit(pthread_t sig_thread_id, int **child_pids, int n_readers) {
 	int r = 0;
-	if (r = pthread_cancel(sig_thread_id)) {
+	if ((r = pthread_cancel(sig_thread_id))) {
 		printf("%d\n",r);
 		fprintf(stderr,"thread joining failed with errno %d and %s\n", errno, strerror(errno));
 	}
 	int *pids = *child_pids;
+	
 	int i = 0;
 	for (; i < n_readers ; i++) {
 		kill(pids[i],SIGTERM);
@@ -282,8 +288,8 @@ void on_program_exit(pthread_t sig_thread_id, int **child_pids, int n_readers) {
 
 }
 
-int main(int argc, char **argv) 
-{
+
+int main(int argc, char **argv) {
 	struct mq_attr attr;
 	pthread_t sig_thread_id;
 	mqd_t mqid;
@@ -297,3 +303,4 @@ int main(int argc, char **argv)
 	on_program_exit(sig_thread_id,&child_pids,2);
 	return 0;
 }
+

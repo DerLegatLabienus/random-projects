@@ -7,7 +7,7 @@ SERVER_SOURCE = main.c process_conf.c
 TEST_SOURCE = test.c
 CLIENT_SOURCE = client.c process_conf.c
 DEBUG_FLAGS = -DCONFIGURATION_DEBUG
-COMPL_FLAGS = -std=gnu11 -O0 
+COMPL_FLAGS = -std=gnu11 -O0 -fsanitize=address
 #COMPL_FLAGS = -std=gnu11 -S
 JSON_SOURCE = json.c json.h
 JSON_OBJECT = json.o

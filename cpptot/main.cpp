@@ -147,7 +147,7 @@ vector<int> mergesort_recursive(const vector<int> vec) {
 			v1_it++;
 		}
 	}
-	return std::move(v_sorted);
+	return v_sorted;
 }
 
 decltype(mergesort_iterative) *mergesort = &mergesort_iterative;

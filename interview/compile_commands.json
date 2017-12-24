@@ -1,0 +1,13 @@
+[
+{
+  "directory": "/home/aviva/random-projects/interview",
+  "command": "g++ -std=gnu++11 -DDFS ques1.cpp -o ques1",
+  "file": "/home/aviva/random-projects/interview/ques1.cpp"
+}
+,
+{
+  "directory": "/home/aviva/random-projects/interview",
+  "command": "g++ -std=gnu++11 -DDFS ques1_2.cpp -o ques1_2",
+  "file": "/home/aviva/random-projects/interview/ques1_2.cpp"
+}
+]

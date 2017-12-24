@@ -59,16 +59,16 @@ void updateMappingAddr(struct server_configuration_t **p_to_conf_map) {
 	*p_to_conf_map = mapping;
 	close(f);
 }
-struct server_configuration_t *build_config(struct server_configuration_t **p_to_conf_map, const char *conf_file) {
+void build_config(struct server_configuration_t **p_to_conf_map, const char *conf_file) {
 	updateMappingAddr(p_to_conf_map);
 	struct server_configuration_t *config = *p_to_conf_map;
 	memset(config,0,sizeof(struct server_configuration_t));
-	FILE *conf_handler = fopen("server_configure.json","r");
+	FILE *conf_handler = fopen(conf_file,"r");
 	json_value *parsed_conf = NULL;
 	if (conf_handler) {
 		fseek(conf_handler,0,SEEK_END);
 		long length = ftell(conf_handler);
-		json_char *json = malloc(sizeof(json_char)*length);
+		json_char *json = (json_char *)malloc(sizeof(json_char)*length);
 		rewind(conf_handler);
 		if (json) {
 			fread(json,1,length,conf_handler);
