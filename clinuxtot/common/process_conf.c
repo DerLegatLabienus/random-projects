@@ -19,7 +19,7 @@ int comparePorts(const void * port1, const void * port2) {
 	return *(PORT_T *)port1 - *(PORT_T *)port2;
 }
 
-void updateMappingAddr(struct server_configuration_t **p_to_conf_map) {
+void update_mapped_configuration(struct server_configuration_t **p_to_conf_map) {
 	int f = open(conf_mapping_file, O_RDWR | O_CREAT);
 	if (f == -1) {
 #ifdef CONFIGURATION_DEBUG
@@ -60,7 +60,8 @@ void updateMappingAddr(struct server_configuration_t **p_to_conf_map) {
 	close(f);
 }
 void build_config(struct server_configuration_t **p_to_conf_map, const char *conf_file) {
-	updateMappingAddr(p_to_conf_map);
+	update_mapped_configuration(p_to_conf_map);
+
 	struct server_configuration_t *config = *p_to_conf_map;
 	memset(config,0,sizeof(struct server_configuration_t));
 	FILE *conf_handler = fopen(conf_file,"r");

@@ -38,7 +38,6 @@ int main(int argc, char **argv) {
 		if (buf.msgid < 0) {
 			continue;
 		}
-		mq_getattr(
 		printf("child process %d printed message of type %d\n",getpid(),buf.msgid);
 		printf("content in size of is %s\n", buf.msg_data);
 		//char *tmp = malloc(buf.msg_len * sizeof(char) + 1);
