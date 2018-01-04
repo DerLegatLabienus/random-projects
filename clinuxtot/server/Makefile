@@ -1,10 +1,6 @@
-CC=gcc
-LD=gcc
-PROJECT_BASE=/home/aviva/random-projects/clinuxtot
-
-SOURCE=${wildcard *.c} $(PROJECT_BASE)/common/process_conf.c
+SOURCE=${wildcard *.c} $(PROJECT_BASE)/common/*.c
 OBJECTS=$(subst .c,.o,$(SOURCE))
-LIBS=$(GLOBAL_LIBS) -lrt -lpthread -ljson -lm -lc
+LIBS=$(GLOBAL_LIBS)
 LIB_PATH := -L$(PROJECT_BASE)/libs/
 INCLUDE_PATH := -I$(PROJECT_BASE)/common
 DEBUG_FLAGS = -DCONFIGURATION_DEBUG
@@ -21,7 +17,7 @@ NAME = $(lastword $(subst /, ,$(dir $(abspath $(lastword $(MAKEFILE_LIST))))))
 all: $(NAME)
 
 $(NAME): $(OBJECTS)
-	$(LD) $^ $(LIBS) $(LIB_PATH) $(GLOBAL_LDFLAGS) -o $@ 
+	$(LD) $^ $(LIBS) $(LIB_PATH) $(GLOBAL_LDFLAGS) -o $(BIN_OUTPUT_DIRECTORY)/$@ 
 
 
 .SILENT: clobber

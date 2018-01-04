@@ -8,5 +8,5 @@ SUBDIRS=$(subst /, ,$(sort $(dir $(wildcard */))))
 all clobber: $(SUBDIRS)
 
 $(SUBDIRS):
-	$(MAKE) -C $@ $(MAKECMDGOALS)
+	cd $@ && $(MAKE) -C . $(MAKECMDGOALS)
 

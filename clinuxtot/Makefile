@@ -1,16 +1,27 @@
-GLOBAL_LIB = -lpthread -lrt -L. -ljson -lm
-GCC = gcc
-CLIENT_SOURCE = client.c process_conf.c
+GLOBAL_LIBS= -lpthread -lrt -L. -ljson -lm
+CC=gcc
+LD=gcc
+PROJECT_BASE=/home/aviva/random-projects/clinuxtot
+BIN_OUTPUT_DIRECTORY:=$(PROJECT_BASE)/bin
 DEBUG_FLAGS = -DCONFIGURATION_DEBUG
-COMPL_FLAGS = -std=gnu11 -O0 -fsanitize=address
+COMPL_FLAGS = -std=gnu11 -O0 #-fsanitize=address
+PROJECT_BASE:=/home/aviva/random-projects/clinuxtot
+BIN_OUTPUT_DIRECTORY:=$(PROJECT_BASE)/bin/
 DIRS = libs client test server 
 .SUFFIX = $(empty)
 .PHONY: all $(DIRS)
 clobber all: $(DIRS)
 #	$(foreach subdir,$(DIRS),cd $(subdir) && $(MAKE) -C $(subdir)/Makefile)
+export BIN_OUTPUT_DIRECTORY
+export PROJECT_BASE
+export CC
+export LD
+export COMPL_FLAGS
+export DEBUG_FLAGS
+export GLOBAL_LIBS
 
 $(DIRS):
-	$(MAKE) -C $@ $(MAKECMDGOALS)
+	cd $@ && $(MAKE) -C ./ $(MAKECMDGOALS)
 
 .SILENT: clobber
 	
@@ -29,6 +40,3 @@ $(DIRS):
 #
 #libjson: $(JSON_OBJECT)
 #	ar rcs $@.a $(JSON_OBJECT) 
-
-	
-	

@@ -1,19 +1,25 @@
 [
 {
-  "directory": "/home/aviva/random-projects/clinuxtot",
-  "command": "gcc -std=gnu11 -O0 -fsanitize=address -DCONFIGURATION_DEBUG -g main.c process_conf.c -o server -lpthread -lrt -L. -ljson -lm",
-  "file": "/home/aviva/random-projects/clinuxtot/main.c"
+  "directory": "/home/aviva/random-projects/clinuxtot/libs/libjson",
+  "command": "gcc -I/home/aviva/random-projects/clinuxtot/common -I. -o json.o -c json.c",
+  "file": "/home/aviva/random-projects/clinuxtot/libs/libjson/json.c"
 }
 ,
 {
-  "directory": "/home/aviva/random-projects/clinuxtot",
-  "command": "gcc -std=gnu11 -O0 -fsanitize=address -g client.c process_conf.c -o client -lpthread -lrt -L. -ljson -lm",
-  "file": "/home/aviva/random-projects/clinuxtot/client.c"
+  "directory": "/home/aviva/random-projects/clinuxtot/client",
+  "command": "gcc -I/home/aviva/random-projects/clinuxtot/common -lrt -lpthread -ljson -lm -lc -L/home/aviva/random-projects/clinuxtot/libs/ -o client.o -c client.c",
+  "file": "/home/aviva/random-projects/clinuxtot/client/client.c"
 }
 ,
 {
-  "directory": "/home/aviva/random-projects/clinuxtot",
-  "command": "gcc -std=gnu11 -O0 -fsanitize=address -g test.c -o test -lpthread -lrt -L. -ljson -lm",
-  "file": "/home/aviva/random-projects/clinuxtot/test.c"
+  "directory": "/home/aviva/random-projects/clinuxtot/test",
+  "command": "gcc -I/home/aviva/random-projects/clinuxtot/common -lrt -lpthread -ljson -lm -lc -L/home/aviva/random-projects/clinuxtot/libs/ -o test.o -c test.c",
+  "file": "/home/aviva/random-projects/clinuxtot/test/test.c"
+}
+,
+{
+  "directory": "/home/aviva/random-projects/clinuxtot/server",
+  "command": "gcc -I/home/aviva/random-projects/clinuxtot/common -std=gnu11 -O0 -DCONFIGURATION_DEBUG -o server.o -c server.c",
+  "file": "/home/aviva/random-projects/clinuxtot/server/server.c"
 }
 ]
